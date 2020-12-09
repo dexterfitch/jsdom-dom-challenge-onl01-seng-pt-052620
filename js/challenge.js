@@ -23,11 +23,11 @@ function minusClick() {
 }
 
 function plusClick() {
-  clearInterval(interval);
+  countNumbersUp();
 }
 
 function pauseClick() {
-
+  clearInterval(interval);
 }
 
 function heartClick() {
