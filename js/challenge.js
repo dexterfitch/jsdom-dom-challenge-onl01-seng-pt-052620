@@ -28,7 +28,7 @@ function plusClick() {
 }
 
 function toggleHidden {
-  
+
 }
 
 function pauseClick() {
