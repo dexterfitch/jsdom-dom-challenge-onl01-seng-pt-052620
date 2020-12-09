@@ -28,7 +28,8 @@ function plusClick() {
 
 function pauseClick() {
   clearInterval(interval);
-  pause.classList.toggle("hidden")
+  pause.classList.toggle("hidden");
+  resume.classList.toggle("hidden");
 }
 
 function heartClick() {
