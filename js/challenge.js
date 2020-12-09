@@ -16,7 +16,7 @@ function minusClick() {
 }
 
 function plusClick() {
-  console.log("plusClick");
+  countSecondsUp();
 }
 
 function pauseClick() {
