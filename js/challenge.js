@@ -47,4 +47,8 @@ document.addEventListener("click", (clickEvent) => {
   }
 });
 
-window.setInterval(countSecondsUp, 1000);
+window.setInterval(function() {
+  if (counter.hasClass("start-counting")) {
+    countSecondsUp();
+  }
+}, 1000);
