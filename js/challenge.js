@@ -26,7 +26,8 @@ function plusClick() {
 }
 
 function pauseClick() {
-  counter.className = "stop-counting";
+  counter.classList.toggle("start-counting");
+  counter.classList.toggle("stop-counting");
 }
 
 function heartClick() {
@@ -47,10 +48,3 @@ document.addEventListener("click", (clickEvent) => {
   }
 });
 
-window.setInterval(function() {
-  if (counter.hasAttribute("class", "start-counting")) {
-    countNumbersUp();
-  } else if (counter.hasAttribute("class", "stop-counting") {
-    window.clearInterval();
-  })
-}, 1000);
