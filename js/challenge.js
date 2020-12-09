@@ -8,13 +8,13 @@ const commentBox = document.getElementById("comment-input");
 const submitButton = document.getElementById("submit");
 
 document.addEventListener("DomContentLoaded", (loaded) => {
-  let counterText = counter.textContent;
-  let counterNum = parseInt(counterText);
-
-  function countSeconds() {
-    counterNum++;
-    counter.textContent = counterNum;
-  }
-
-  window.setInterval(countSeconds, 1000);
+  const counterText = counter.textContent;
+  const counterNum = parseInt(counterText);
 });
+
+function countSeconds() {
+  counterNum++;
+  counter.textContent = counterNum;
+}
+
+window.setInterval(countSeconds, 1000);
