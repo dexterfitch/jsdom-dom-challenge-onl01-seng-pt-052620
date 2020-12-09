@@ -7,22 +7,22 @@ const likes = document.querySelector(".likes");
 const commentBox = document.getElementById("comment-input");
 const submitButton = document.getElementById("submit");
 
-function countSecondsUp() {
+function countNumbersUp() {
   counter.textContent = parseInt(counter.textContent) + 1;
 }
 
-function countSecondsDown() {
+function countNumbersDown() {
   counter.textContent = parseInt(counter.textContent) - 1;
 }
 
 function minusClick() {
   if (counter.textContent > 0) {
-    countSecondsDown();
+    countNumbersDown();
   }
 }
 
 function plusClick() {
-  countSecondsUp();
+  countNumbersUp();
 }
 
 function pauseClick(i) {
@@ -48,7 +48,7 @@ document.addEventListener("click", (clickEvent) => {
 });
 
 window.setInterval(function() {
-  if (!counter.hasAttribute("class", "stop-counting")) {
-    countSecondsUp();
+  if (counter.hasAttribute("class", "start-counting")) {
+    countNumbersUp();
   }
 }, 1000);
