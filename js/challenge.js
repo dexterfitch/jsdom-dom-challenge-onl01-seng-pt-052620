@@ -20,9 +20,10 @@ function plusClick() {
 }
 
 document.addEventListener("click", (clickEvent) => {
-  if (clickEvent.target.id === minus.id) {
+  let clickedArea = clickEvent.target.id;
+  if (clickedArea === minus.id) {
     minusClick();
-  } else if (clickEvent.target.id === plus.id) {
+  } else if (clickedArea === plus.id) {
     plusClick();
   }
 });
