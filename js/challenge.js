@@ -47,17 +47,17 @@ function heartClick() {
 }
 
 document.addEventListener("click", (clickEvent) => {
-  let clickedArea = clickEvent.target.id;
+  let clickedAreaID = clickEvent.target.id;
 
-  if (clickedArea === minus.id) {
+  if (clickedAreaID === minus.id) {
     minusClick();
-  } else if (clickedArea === plus.id) {
+  } else if (clickedAreaID === plus.id) {
     plusClick();
-  } else if (clickedArea === pause.id) {
+  } else if (clickedAreaID === pause.id) {
     pauseClick();
-  } else if (clickedArea === play.id) {
+  } else if (clickedAreaID === play.id) {
     playClick();
-  } else if (clickedArea === heart.id) {
+  } else if (clickedAreaID === heart.id) {
     heartClick();
   }
 });
