@@ -6,4 +6,3 @@ const pause = document.getElementById("pause");
 
 let counterText = counter.textContent;
 let counterNum = parseInt(counterText);
-
