@@ -16,3 +16,10 @@ document.addEventListener("DomContentLoaded", (loaded) => {
     counter.textContent = counterNum;
   }
 });
+
+
+
+var intervalID = window.setInterval(myCallback, 500, 'Parameter 1', 'Parameter 2');
+
+function countSeconds() {
+}
