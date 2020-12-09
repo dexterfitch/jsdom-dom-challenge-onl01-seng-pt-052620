@@ -54,4 +54,4 @@ document.addEventListener("click", (clickEvent) => {
   }
 });
 
-setTimeout(countNumbersUp, 1000);
+setTimeout(countNumbersUp, 1);
