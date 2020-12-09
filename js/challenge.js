@@ -48,7 +48,7 @@ document.addEventListener("click", (clickEvent) => {
 });
 
 window.setInterval(function() {
-  if (counter.hasAttribute("class", "start-counting")) {
+  if (!counter.hasAttribute("class", "stop-counting")) {
     countSecondsUp();
   }
 }, 1000);
