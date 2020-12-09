@@ -15,9 +15,9 @@ function countSeconds() {
 }
 
 document.addEventListener("click", (clickEvent) => {
-  if (clickEvent.target === minus) {
+  if (clickEvent.target.id === minus.id) {
     console.log("minusClick");
-  } else if (clickEvent.target === plus) {
+  } else if (clickEvent.target.id === plus.id) {
     console.log("plusClick");
   }
 });
