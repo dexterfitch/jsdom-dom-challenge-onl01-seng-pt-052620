@@ -11,6 +11,10 @@ function countSecondsUp() {
   counter.textContent = parseInt(counter.textContent) + 1;
 }
 
+function countSecondsDown() {
+  counter.textContent = parseInt(counter.textContent) - 1;
+}
+
 function minusClick() {
   console.log("minusClick");
 }
