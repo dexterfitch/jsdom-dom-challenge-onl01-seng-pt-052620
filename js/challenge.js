@@ -29,7 +29,7 @@ function heartClick() {
 
 document.addEventListener("click", (clickEvent) => {
   let clickedArea = clickEvent.target.id;
-  
+
   if (clickedArea === minus.id) {
     minusClick();
   } else if (clickedArea === plus.id) {
