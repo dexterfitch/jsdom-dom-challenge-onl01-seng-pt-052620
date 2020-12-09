@@ -16,7 +16,9 @@ function countSecondsDown() {
 }
 
 function minusClick() {
-  countSecondsDown();
+  if (counter.textContent >= 0) {
+    countSecondsDown();  
+  }
 }
 
 function plusClick() {
