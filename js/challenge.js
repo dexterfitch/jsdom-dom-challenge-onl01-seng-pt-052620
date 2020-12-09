@@ -53,3 +53,7 @@ document.addEventListener("click", (clickEvent) => {
     heartClick();
   }
 });
+
+if (counter.className === "start-counting") {
+  window.setInterval(countNumbersUp, 1000);
+}
