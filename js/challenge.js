@@ -27,7 +27,7 @@ function plusClick() {
   countNumbersUp();
 }
 
-function toggleHidden {
+function toggleHidden() {
 
 }
 
