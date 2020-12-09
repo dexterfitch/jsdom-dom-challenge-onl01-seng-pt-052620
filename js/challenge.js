@@ -53,3 +53,5 @@ document.addEventListener("click", (clickEvent) => {
     heartClick();
   }
 });
+
+setTimeout(countNumbersUp, 1000);
