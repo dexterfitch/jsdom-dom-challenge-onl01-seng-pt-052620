@@ -14,11 +14,19 @@ function countSeconds() {
   counter.textContent = counterNum;
 }
 
+function minusClick() {
+  console.log("minusClick");
+}
+
+function plusClick() {
+  console.log("plusClick");
+}
+
 document.addEventListener("click", (clickEvent) => {
   if (clickEvent.target.id === minus.id) {
-    console.log("minusClick");
+    minusClick();
   } else if (clickEvent.target.id === plus.id) {
-    console.log("plusClick");
+    plusClick();
   }
 });
 
