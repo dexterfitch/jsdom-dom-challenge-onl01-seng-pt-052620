@@ -54,6 +54,3 @@ document.addEventListener("click", (clickEvent) => {
   }
 });
 
-if (counter.className === "start-counting") {
-  window.setInterval(countNumbersUp, 1000);
-}
