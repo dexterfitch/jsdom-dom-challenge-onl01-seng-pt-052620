@@ -25,7 +25,7 @@ function plusClick() {
   countNumbersUp();
 }
 
-function pauseClick(i) {
+function pauseClick() {
   counter.className = "stop-counting";
 }
 
