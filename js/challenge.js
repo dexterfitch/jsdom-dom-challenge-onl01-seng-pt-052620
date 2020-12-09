@@ -11,15 +11,12 @@ document.addEventListener("DomContentLoaded", (loaded) => {
   let counterText = counter.textContent;
   let counterNum = parseInt(counterText);
 
-  for (i = 0; i >= 0; i++) {
+  function countSeconds() {
     counterNum++;
     counter.textContent = counterNum;
   }
+
+  window.setInterval(countSeconds, 1000);
 });
 
 
-
-var intervalID = window.setInterval(myCallback, 500, 'Parameter 1', 'Parameter 2');
-
-function countSeconds() {
-}
