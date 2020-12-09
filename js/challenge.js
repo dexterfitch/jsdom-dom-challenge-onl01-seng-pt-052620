@@ -23,7 +23,7 @@ function minusClick() {
 }
 
 function plusClick() {
-  countNumbersUp();
+  clearInterval(interval);
 }
 
 function pauseClick() {
