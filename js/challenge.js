@@ -1,8 +1,8 @@
 const counter = document.getElementById("counter");
 const minus = document.getElementById("minus");
 const plus = document.getElementById("plus");
-const heart = document.getElementById("heart");
 const pause = document.getElementById("pause");
+const heart = document.getElementById("heart");
 const likes = document.querySelector(".likes");
 const commentBox = document.getElementById("comment-input");
 const submitButton = document.getElementById("submit");
@@ -25,6 +25,10 @@ document.addEventListener("click", (clickEvent) => {
     minusClick();
   } else if (clickedArea === plus.id) {
     plusClick();
+  } else if (clickedArea === pause.id) {
+    
+  } else if (clickedArea === heart.id) {
+    
   }
 });
 
