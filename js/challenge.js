@@ -28,19 +28,18 @@ function plusClick() {
 }
 
 function toggleHidden() {
-
+  pause.classList.toggle("hidden");
+  play.classList.toggle("hidden");
 }
 
 function pauseClick() {
   clearInterval(interval);
-  pause.classList.toggle("hidden");
-  play.classList.toggle("hidden");
+  toggleHidden();
 }
 
 function playClick() {
   interval = setInterval(countNumbersUp, 1000);
-  pause.classList.toggle("hidden");
-  play.classList.toggle("hidden");
+  toggleHidden();
 }
 
 function heartClick() {
