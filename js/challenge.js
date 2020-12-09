@@ -31,6 +31,8 @@ function pauseClick() {
 
   if (counter.className === "stop-counting") {
     console.log("stop-counting");
+  } else if (counter.className === "start-counting") {
+    console.log("start-counting");
   }
 }
 
