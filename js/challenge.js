@@ -18,5 +18,3 @@ document.addEventListener("DomContentLoaded", (loaded) => {
 
   window.setInterval(countSeconds, 1000);
 });
-
-
