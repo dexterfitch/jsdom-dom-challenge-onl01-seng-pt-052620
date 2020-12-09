@@ -26,9 +26,9 @@ document.addEventListener("click", (clickEvent) => {
   } else if (clickedArea === plus.id) {
     plusClick();
   } else if (clickedArea === pause.id) {
-    
+
   } else if (clickedArea === heart.id) {
-    
+
   }
 });
 
