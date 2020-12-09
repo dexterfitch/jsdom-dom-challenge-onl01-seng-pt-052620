@@ -29,7 +29,9 @@ function pauseClick() {
   counter.classList.toggle("start-counting");
   counter.classList.toggle("stop-counting");
 
-  console.log(counter.className);
+  if (counter.className === "stop-counting") {
+    console.log("stop-counting");
+  }
 }
 
 function heartClick() {
