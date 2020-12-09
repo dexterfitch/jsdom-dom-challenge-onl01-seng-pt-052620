@@ -7,7 +7,7 @@ const likes = document.querySelector(".likes");
 const commentBox = document.getElementById("comment-input");
 const submitButton = document.getElementById("submit");
 
-function countSeconds() {
+function countSecondsUp() {
   counter.textContent = parseInt(counter.textContent) + 1;
 }
 
@@ -41,4 +41,4 @@ document.addEventListener("click", (clickEvent) => {
   }
 });
 
-window.setInterval(countSeconds, 1000);
+window.setInterval(countSecondsUp, 1000);
