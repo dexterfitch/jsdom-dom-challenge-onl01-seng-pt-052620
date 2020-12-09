@@ -27,7 +27,7 @@ function plusClick() {
 }
 
 function pauseClick() {
-  
+
 }
 
 function heartClick() {
