@@ -19,6 +19,14 @@ function plusClick() {
   console.log("plusClick");
 }
 
+function pauseClick() {
+  console.log("pauseClick");
+}
+
+function heartClick() {
+  console.log("heartClick");
+}
+
 document.addEventListener("click", (clickEvent) => {
   let clickedArea = clickEvent.target.id;
   if (clickedArea === minus.id) {
