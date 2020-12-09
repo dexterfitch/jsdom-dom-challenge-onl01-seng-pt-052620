@@ -26,7 +26,7 @@ function plusClick() {
 }
 
 function pauseClick(i) {
-  window.clearInterval();
+  counter.className = "stop-counting";
 }
 
 function heartClick() {
