@@ -28,6 +28,7 @@ function plusClick() {
 
 function pauseClick() {
   clearInterval(interval);
+  pause.classList.toggle("hidden")
 }
 
 function heartClick() {
