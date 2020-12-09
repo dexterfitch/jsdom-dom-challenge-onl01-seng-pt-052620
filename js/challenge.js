@@ -50,5 +50,7 @@ document.addEventListener("click", (clickEvent) => {
 window.setInterval(function() {
   if (counter.hasAttribute("class", "start-counting")) {
     countNumbersUp();
-  }
+  } else if (counter.hasAttribute("class", "stop-counting") {
+    window.clearInterval();
+  })
 }, 1000);
