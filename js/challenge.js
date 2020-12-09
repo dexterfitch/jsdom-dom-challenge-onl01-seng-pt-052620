@@ -6,6 +6,7 @@ const heart = document.getElementById("heart");
 const likes = document.querySelector(".likes");
 const commentBox = document.getElementById("comment-input");
 const submitButton = document.getElementById("submit");
+let interval = setInterval(countNumbersUp, 1000);
 
 function countNumbersUp() {
   counter.textContent = parseInt(counter.textContent) + 1;
@@ -26,14 +27,7 @@ function plusClick() {
 }
 
 function pauseClick() {
-  counter.classList.toggle("start-counting");
-  counter.classList.toggle("stop-counting");
-
-  if (counter.className === "stop-counting") {
-    clearTimeout();
-  } else if (counter.className === "start-counting") {
-    setTimeout(countNumbersUp, 1000);
-  }
+  
 }
 
 function heartClick() {
@@ -53,5 +47,3 @@ document.addEventListener("click", (clickEvent) => {
     heartClick();
   }
 });
-
-setTimeout(countNumbersUp, 1);
