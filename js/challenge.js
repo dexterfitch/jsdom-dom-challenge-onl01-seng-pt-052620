@@ -38,6 +38,7 @@ function pauseClick() {
 }
 
 function playClick() {
+  interval = setInterval(countNumbersUp, 1000);
   pause.classList.toggle("hidden");
   play.classList.toggle("hidden");
 }
