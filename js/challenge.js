@@ -8,8 +8,7 @@ const commentBox = document.getElementById("comment-input");
 const submitButton = document.getElementById("submit");
 
 function countSeconds() {
-  let counterNum = parseInt(counter.textContent);
-  counterNum++;
+  let counterNum = parseInt(counter.textContent)++;
   counter.textContent = counterNum;
 }
 
