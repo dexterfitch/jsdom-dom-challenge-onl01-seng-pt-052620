@@ -14,4 +14,12 @@ function countSeconds() {
   counter.textContent = counterNum;
 }
 
+document.addEventListener("click", (clickEvent) => {
+  if (clickEvent.target === minus) {
+    console.log("minusClick");
+  } else if (clickEvent.target === plus) {
+    console.log("plusClick");
+  }
+});
+
 window.setInterval(countSeconds, 1000);
