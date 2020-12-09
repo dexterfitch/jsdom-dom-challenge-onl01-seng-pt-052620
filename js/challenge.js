@@ -7,5 +7,12 @@ const likes = document.querySelector(".likes");
 const commentBox = document.getElementById("comment-input");
 const submitButton = document.getElementById("submit");
 
-let counterText = counter.textContent;
-let counterNum = parseInt(counterText);
+document.addEventListener("DomContentLoaded", (loaded) => {
+  let counterText = counter.textContent;
+  let counterNum = parseInt(counterText);
+
+  for (i = 0; i >= 0; i++) {
+    counterNum++;
+    counter.textContent = counterNum;
+  }
+});
