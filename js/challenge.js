@@ -45,6 +45,8 @@ document.addEventListener("click", (clickEvent) => {
     plusClick();
   } else if (clickedArea === pause.id) {
     pauseClick();
+  } else if (clickedArea === resume.id) {
+    resumeClick();
   } else if (clickedArea === heart.id) {
     heartClick();
   }
