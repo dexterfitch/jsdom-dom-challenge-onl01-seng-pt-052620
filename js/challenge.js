@@ -2,6 +2,7 @@ const counter = document.getElementById("counter");
 const minus = document.getElementById("minus");
 const plus = document.getElementById("plus");
 const pause = document.getElementById("pause");
+const play = document.getElementById("play");
 const heart = document.getElementById("heart");
 const likes = document.querySelector(".likes");
 const commentBox = document.getElementById("comment-input");
@@ -26,10 +27,19 @@ function plusClick() {
   countNumbersUp();
 }
 
+function toggleHidden {
+  
+}
+
 function pauseClick() {
   clearInterval(interval);
   pause.classList.toggle("hidden");
-  resume.classList.toggle("hidden");
+  play.classList.toggle("hidden");
+}
+
+function playClick() {
+  pause.classList.toggle("hidden");
+  play.classList.toggle("hidden");
 }
 
 function heartClick() {
@@ -45,8 +55,8 @@ document.addEventListener("click", (clickEvent) => {
     plusClick();
   } else if (clickedArea === pause.id) {
     pauseClick();
-  } else if (clickedArea === resume.id) {
-    resumeClick();
+  } else if (clickedArea === play.id) {
+    playClick();
   } else if (clickedArea === heart.id) {
     heartClick();
   }
