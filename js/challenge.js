@@ -25,8 +25,8 @@ function plusClick() {
   countSecondsUp();
 }
 
-function pauseClick() {
-  console.log("pauseClick");
+function pauseClick(i) {
+  window.clearInterval();
 }
 
 function heartClick() {
