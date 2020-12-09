@@ -53,4 +53,3 @@ document.addEventListener("click", (clickEvent) => {
     heartClick();
   }
 });
-
