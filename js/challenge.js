@@ -48,3 +48,5 @@ document.addEventListener("click", (clickEvent) => {
 });
 
 window.setInterval(countSecondsUp, 1000);
+
+
