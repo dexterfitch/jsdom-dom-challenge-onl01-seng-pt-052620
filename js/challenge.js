@@ -30,9 +30,9 @@ function pauseClick() {
   counter.classList.toggle("stop-counting");
 
   if (counter.className === "stop-counting") {
-    console.log("stop-counting");
+    window.clearInterval();
   } else if (counter.className === "start-counting") {
-    console.log("start-counting");
+    window.setInterval(countNumbersUp, 1000);
   }
 }
 
